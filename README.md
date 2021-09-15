@@ -17,6 +17,4 @@ Indoor Automated Farm Laboratory Research
 | 12   | [FarmLab Photo Retrospective](https://youtu.be/E-TNKgtvq4k)
 
 
-[view FarmLab on Github](https://github.com/Automated-Aeroponics-Innovations/FarmLab)
 
-[view FarmLab on Youtube](https://youtu.be/E-TNKgtvq4k)
