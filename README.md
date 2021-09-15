@@ -15,3 +15,8 @@ Indoor Automated Farm Laboratory Research
 | 10   | [Development Plan](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/9%20-%20Development%20Plan.pdf)
 | 11   | [System Development Plan](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/9%20-%20System%20Development%20Plan.pdf)
 | 12   | [FarmLab Photo Retrospective](https://youtu.be/E-TNKgtvq4k)
+
+
+[view FarmLab on Github](https://github.com/Automated-Aeroponics-Innovations/FarmLab)
+
+[view FarmLab on Youtube](https://youtu.be/E-TNKgtvq4k)
