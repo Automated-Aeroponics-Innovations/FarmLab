@@ -17,6 +17,4 @@ Indoor Automated Farm Laboratory Research
 | 12   | [FarmLab Photo Retrospective](https://youtu.be/E-TNKgtvq4k)
 | 13   | [FarmLab Phase 2 Redesign: CropKing Gutter Suspension](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Lab%20Redesign%20CropKing%20Gutter%20Suspension.pdf)
 | 14   | [FarmLab Phase 2 Redesign: CropKing Gutter Suspension Alternative](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Lab%20Redesign%20CropKing%20Gutter%20Suspension%20Alternative.pdf)
-
-
-
+| 15   | [FarmLab Phase 2 Redesign: CropKing Gutter Suspension Alternative 2](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Lab%20Redesign%20CropKing%20Gutter%20Suspension%20Alternative%202.pdf)
