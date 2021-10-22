@@ -15,6 +15,7 @@ Indoor Automated Farm Laboratory Research
 | 10   | [Development Plan](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/9%20-%20Development%20Plan.pdf)
 | 11   | [System Development Plan](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/9%20-%20System%20Development%20Plan.pdf)
 | 12   | [FarmLab Photo Retrospective](https://youtu.be/E-TNKgtvq4k)
+| 13   | [FarmLab Phase 2 Redesign: CropKing Gutter Suspension](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Lab%20Redesign%20CropKing%20Gutter%20Suspension.pdf)
 
 
 
