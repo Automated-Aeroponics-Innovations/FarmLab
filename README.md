@@ -3,6 +3,7 @@ Indoor Automated Farm Laboratory Research
 
 | Part |      Title                
 |------|---------------------------
+| 0    | [Introduction](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/ARJW%20Statement%20of%20Purpose%202021.docx.pdf)
 | 1    | [Why Build an Automated Aeroponics Laboratory](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/0%20-%20Why%20build%20an%20Automated%20Aeroponics%20Laboratory%20System.pdf)
 | 2    | [Agility of the Automated Aeroponics Laboratory System Software](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/1%20-%20Agility%20of%20AALS%20Development.pdf) 
 | 3    | [Software Requirements  of the Automated Aeroponics Laboratory System Software](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/2%20-%20AALS%20Requirements%20Development%2C%20Elicitation%20and%20Analysis.pdf)
