@@ -22,3 +22,5 @@ Indoor Automated Farm Laboratory Research
 
 
 [LinkedIn](https://www.linkedin.com/in/anthemrukiya/)
+
+[jiNx - not just Software](https://anthemwingate.github.io/jiNx/)
