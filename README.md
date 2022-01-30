@@ -19,8 +19,6 @@ Indoor Automated Farm Laboratory Research
 | 13   | [FarmLab Phase 2 Redesign: CropKing Gutter Suspension](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Lab%20Redesign%20CropKing%20Gutter%20Suspension.pdf)
 | 14   | [FarmLab Phase 2 Redesign: CropKing Gutter Suspension Alternative](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Lab%20Redesign%20CropKing%20Gutter%20Suspension%20Alternative.pdf)
 | 15   | [FarmLab Phase 2 Redesign: CropKing Gutter Suspension Alternative 2](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Lab%20Redesign%20CropKing%20Gutter%20Suspension%20Alternative%202.pdf)
-
-
-[LinkedIn](https://www.linkedin.com/in/anthemrukiya/)
-
-[jiNx - not just Software](https://anthemwingate.github.io/jiNx/)
+| 16   | [FarmLab Phase 2 Redesign: Drip Hydroponic Station](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Farmlab%20Hydroponic%20Station.pdf)
+| ---- | [LinkedIn](https://www.linkedin.com/in/anthemrukiya/)
+| ---- | [jiNx - not just Software](https://anthemwingate.github.io/jiNx/)
