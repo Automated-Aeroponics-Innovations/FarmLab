@@ -41,6 +41,7 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 | 16   | [FarmLab Phase 2 Redesign: Drip Hydroponic Station](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Farmlab%20Hydroponic%20Station.pdf)
 | Lit Review | [In Vivo Biosensing, Coppede et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/An%20in%20vivo%20biosensing%2C%20biomimetic%20electrochemical%20transistor%20with%20applications%20in%20plant%20science%20and%20precision%20farming.pdf)
 | Lit Review | [Crop productivities and radiation use efficiencies, Wheeler et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Adv-Space-Res-2008-Crop-Prod-and-Rad-Use-Eff.pdf)
+| Lit Review | [The MLOps Engineer Role: A Gentle Introduction](https://towardsdatascience.com/the-mlops-engineer-role-a-gentle-introduction-8d94cdc73904)
 | ---- | [Statement of Purpose](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/ARJW%20Statement%20of%20Purpose.pdf)
 | ---- | [LinkedIn](https://www.linkedin.com/in/anthemrukiya/)
 | ---- | [jiNx - not just Software](https://anthemwingate.github.io/jiNx/)
