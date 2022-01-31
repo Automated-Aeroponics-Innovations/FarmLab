@@ -1,5 +1,4 @@
 # FarmLab
-Digital Agriculture Research Laboratory
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vQOM1ieGnPYh-PBqkXKkI9bVRvzg0V2dmUVZKkXYqjt_2VIYqaxZ6_Xbdp3ijYZCoKVjOsJnvhI4aFP/pub?w=960&amp;h=720">
 
