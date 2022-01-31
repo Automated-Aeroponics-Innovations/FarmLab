@@ -1,6 +1,8 @@
 # FarmLab
 Digital Agriculture Research Laboratory
 
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vQOM1ieGnPYh-PBqkXKkI9bVRvzg0V2dmUVZKkXYqjt_2VIYqaxZ6_Xbdp3ijYZCoKVjOsJnvhI4aFP/pub?w=960&amp;h=720">
+
 
 The ultimate goal of FarmLab is to one day produce a scalable, AI-administered aeroponics pilot program that can support the the subsistence agriculture needs of communities in food deserts - that's serving thousands of people from a single site the size of a football field.  This endeavor was largely inspired by the research conducted by [NASA on the ISS](https://www.nasa.gov/content/growing-plants-in-space).
 
