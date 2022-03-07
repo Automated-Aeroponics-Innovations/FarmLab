@@ -44,12 +44,16 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 | 20   | [FarmLab Phase 2 Redesign: Nutrient Delivery System](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Nutrient%20Delivery%20System.pdf)
 
 
+
+
 **Progress Reports**
 
 | Date      |      Section                
 |-----------|---------------------------
 | 07MAR2022 | [Drip Hydro](https://youtu.be/kHuJHQqgwsgg)
 | 07MAR2022 | [Crop King Gutter system](https://youtu.be/R-Y2thaPCig)
+
+
 
 
 **Literature Review**
@@ -64,6 +68,8 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 | 6     | [NIR Applications in Agriculture by Trimble](https://felixinstruments.com/blog/nir-applications-in-agriculture-everything-you-need-to-know-for-2020/)
 | 7     | [Determination of Leaf Water Content by Visible and Near-Infrared Spectrometry and Multivariate Calibration in Miscanthus by Jin et al](https://www.frontiersin.org/articles/10.3389/fpls.2017.00721/full)
 | 8     | [Carbon NanoTubule Optical Probes and Sensors Merav Antman-Passig et al 2019 Electrochem. Soc. Interface 28 61](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/SWCNT_Igantova_2019.pdf)
+
+
 
 
 **Developer Bio**
