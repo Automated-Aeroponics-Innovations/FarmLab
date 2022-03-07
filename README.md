@@ -19,7 +19,21 @@ Dr. Abraham Stroock at Cornell is one of a handful of scientists pioneering this
 FarmLab, and similar digital agriculture projects, will one day help us to solve food insecurity and to open the door to deep space exploration.  Think of FarmLab as one among the first handful  of state of the art prototypes for systems so precise that they regulate nutrient delivery and lighting based on the output of a sensor on a single leaf of a plant.  This is the core purpose of FarmLab, digital agriculture innovation.  What FarmLab proposes is not simply a lab fully automated by ML algorithms, but a lab regulated by the very plants themselves.  
 
 
+
+
+
+**Project Kanban Boards**
+
+| Part |      Title                
+|------|---------------------------
+| 1    | [FarmLab](https://github.com/Automated-Aeroponics-Innovations/FarmLab/projects/1)
+| 2    | [BaluLab - Digital Agriculture](https://github.com/balu-lab/Digital_AG/projects/1)
+
+
+
+
 **Documentation**
+
 | Part |      Title                
 |------|---------------------------
 | 1    | [Why Build an Automated Aeroponics Laboratory](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/0%20-%20Why%20build%20an%20Automated%20Aeroponics%20Laboratory%20System.pdf)
