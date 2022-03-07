@@ -52,6 +52,7 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 | Lit Review | [Water and nitrogen in-situ imaging detection in live corn leaves using near-infrared camera and interference filter by Zhang et al](https://plantmethods.biomedcentral.com/track/pdf/10.1186/s13007-021-00815-5.pdf)
 | Lit Review | [NIR Applications in Agriculture by Trimble](https://felixinstruments.com/blog/nir-applications-in-agriculture-everything-you-need-to-know-for-2020/)
 | Lit Review | [Determination of Leaf Water Content by Visible and Near-Infrared Spectrometry and Multivariate Calibration in Miscanthus by Jin et al](https://www.frontiersin.org/articles/10.3389/fpls.2017.00721/full)
+| Lit Review | [Carbon NanoTubule Optical Probes and Sensors Merav Antman-Passig et al 2019 Electrochem. Soc. Interface 28 61](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/SWCNT_Igantova_2019.pdf)
 | ---- | [Statement of Purpose](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/ARJW%20Statement%20of%20Purpose.pdf)
 | ---- | [LinkedIn](https://www.linkedin.com/in/anthemrukiya/)
 | ---- | [jiNx - not just Software](https://anthemwingate.github.io/jiNx/)
