@@ -19,7 +19,7 @@ Dr. Abraham Stroock at Cornell is one of a handful of scientists pioneering this
 FarmLab, and similar digital agriculture projects, will one day help us to solve food insecurity and to open the door to deep space exploration.  Think of FarmLab as one among the first handful  of state of the art prototypes for systems so precise that they regulate nutrient delivery and lighting based on the output of a sensor on a single leaf of a plant.  This is the core purpose of FarmLab, digital agriculture innovation.  What FarmLab proposes is not simply a lab fully automated by ML algorithms, but a lab regulated by the very plants themselves.  
 
 
-
+**Documentation**
 | Part |      Title                
 |------|---------------------------
 | 1    | [Why Build an Automated Aeroponics Laboratory](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/0%20-%20Why%20build%20an%20Automated%20Aeroponics%20Laboratory%20System.pdf)
@@ -42,16 +42,34 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 | 18   | [FarmLab Phase 2 Redesign: Detailed Drip Hydro, HPAS LPAS Integration with Morlan Lunsford Flow Diagram Template](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Detailed%20Drip%20Hydro%20LPAS%20HPAS%20Integration.pdf)
 | 19   | [FarmLab Phase 2 Resesign: Drip Hydro Side and Rear View](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Drip%20Hydro%20Side%20and%20Rear%20view.pdf)
 | 20   | [FarmLab Phase 2 Redesign: Nutrient Delivery System](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Nutrient%20Delivery%20System.pdf)
-| 21   | [Drip Hydro Progress - 07MAR2022](https://youtu.be/kHuJHQqgwsgg)
-| 22   | [Crop King Gutter system Progress 07MAR2022](https://youtu.be/R-Y2thaPCig)
-| Lit Review | [Determination of Leaf Water Content by Visible and Near-Infrared Spectrometry and Multivariate Calibration in Miscanthus by Xiaoli jin, et al](https://www.frontiersin.org/articles/10.3389/fpls.2017.00721/full)
-| Lit Review | [In Vivo Biosensing, Coppede et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/An%20in%20vivo%20biosensing%2C%20biomimetic%20electrochemical%20transistor%20with%20applications%20in%20plant%20science%20and%20precision%20farming.pdf)
-| Lit Review | [Crop productivities and radiation use efficiencies, Wheeler et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Adv-Space-Res-2008-Crop-Prod-and-Rad-Use-Eff.pdf)
-| Lit Review | [The MLOps Engineer Role: A Gentle Introduction](https://towardsdatascience.com/the-mlops-engineer-role-a-gentle-introduction-8d94cdc73904)
-| Lit Review | [Water and nitrogen in-situ imaging detection in live corn leaves using near-infrared camera and interference filter by Zhang et al](https://plantmethods.biomedcentral.com/track/pdf/10.1186/s13007-021-00815-5.pdf)
-| Lit Review | [NIR Applications in Agriculture by Trimble](https://felixinstruments.com/blog/nir-applications-in-agriculture-everything-you-need-to-know-for-2020/)
-| Lit Review | [Determination of Leaf Water Content by Visible and Near-Infrared Spectrometry and Multivariate Calibration in Miscanthus by Jin et al](https://www.frontiersin.org/articles/10.3389/fpls.2017.00721/full)
-| Lit Review | [Carbon NanoTubule Optical Probes and Sensors Merav Antman-Passig et al 2019 Electrochem. Soc. Interface 28 61](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/SWCNT_Igantova_2019.pdf)
-| ---- | [Statement of Purpose](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/ARJW%20Statement%20of%20Purpose.pdf)
-| ---- | [LinkedIn](https://www.linkedin.com/in/anthemrukiya/)
-| ---- | [jiNx - not just Software](https://anthemwingate.github.io/jiNx/)
+
+
+**Progress Reports**
+
+| Date      |      Section                
+|-----------|---------------------------
+| 07MAR2022 | [Drip Hydro](https://youtu.be/kHuJHQqgwsgg)
+| 07MAR2022 | [Crop King Gutter system](https://youtu.be/R-Y2thaPCig)
+
+
+**Literature Review**
+
+| Part  |      Section                
+|-------|---------------------------
+| 1     | [Determination of Leaf Water Content by Visible and Near-Infrared Spectrometry and Multivariate Calibration in Miscanthus by Xiaoli jin, et al](https://www.frontiersin.org/articles/10.3389/fpls.2017.00721/full)
+| 2     | [In Vivo Biosensing, Coppede et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/An%20in%20vivo%20biosensing%2C%20biomimetic%20electrochemical%20transistor%20with%20applications%20in%20plant%20science%20and%20precision%20farming.pdf)
+| 3     | [Crop productivities and radiation use efficiencies, Wheeler et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Adv-Space-Res-2008-Crop-Prod-and-Rad-Use-Eff.pdf)
+| 4     | [The MLOps Engineer Role: A Gentle Introduction](https://towardsdatascience.com/the-mlops-engineer-role-a-gentle-introduction-8d94cdc73904)
+| 5     | [Water and nitrogen in-situ imaging detection in live corn leaves using near-infrared camera and interference filter by Zhang et al](https://plantmethods.biomedcentral.com/track/pdf/10.1186/s13007-021-00815-5.pdf)
+| 6     | [NIR Applications in Agriculture by Trimble](https://felixinstruments.com/blog/nir-applications-in-agriculture-everything-you-need-to-know-for-2020/)
+| 7     | [Determination of Leaf Water Content by Visible and Near-Infrared Spectrometry and Multivariate Calibration in Miscanthus by Jin et al](https://www.frontiersin.org/articles/10.3389/fpls.2017.00721/full)
+| 8     | [Carbon NanoTubule Optical Probes and Sensors Merav Antman-Passig et al 2019 Electrochem. Soc. Interface 28 61](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/SWCNT_Igantova_2019.pdf)
+
+
+**Developer Bio**
+
+| Part |      Section                
+|------|---------------------------
+| 1    | [Statement of Purpose](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/ARJW%20Statement%20of%20Purpose.pdf)
+| 2    | [LinkedIn](https://www.linkedin.com/in/anthemrukiya/)
+| 3    | [jiNx - not just Software](https://anthemwingate.github.io/jiNx/)
