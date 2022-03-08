@@ -48,14 +48,7 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 | 10   | [Development Plan](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/9%20-%20Development%20Plan.pdf)
 | 11   | [System Development Plan](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/9%20-%20System%20Development%20Plan.pdf)
 | 12   | [FarmLab Photo Retrospective](https://youtu.be/E-TNKgtvq4k)
-| 13   | [FarmLab Phase 2 Redesign: CropKing Gutter Suspension](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Lab%20Redesign%20CropKing%20Gutter%20Suspension.pdf)
-| 14   | [FarmLab Phase 2 Redesign: CropKing Gutter Suspension Alternative](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Lab%20Redesign%20CropKing%20Gutter%20Suspension%20Alternative.pdf)
-| 15   | [FarmLab Phase 2 Redesign: CropKing Gutter Suspension Alternative 2](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Lab%20Redesign%20CropKing%20Gutter%20Suspension%20Alternative%202.pdf)
-| 16   | [FarmLab Phase 2 Redesign: Drip Hydroponic Station](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Farmlab%20Hydroponic%20Station.pdf)
-| 17   | [FarmLab Phase 2 Redesign: Drip Hydro, HPAS, LPAS Integration](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Drip%20Hydro%20LPAS%20HPAS%20Integration.pdf)
-| 18   | [FarmLab Phase 2 Redesign: Detailed Drip Hydro, HPAS LPAS Integration with Morlan Lunsford Flow Diagram Template](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Detailed%20Drip%20Hydro%20LPAS%20HPAS%20Integration.pdf)
-| 19   | [FarmLab Phase 2 Resesign: Drip Hydro Side and Rear View](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Drip%20Hydro%20Side%20and%20Rear%20view.pdf)
-| 20   | [FarmLab Phase 2 Redesign: Nutrient Delivery System](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Nutrient%20Delivery%20System.pdf)
+| 13   | [FarmLab Phase 2 Redesign: Nutrient Delivery System](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Nutrient%20Delivery%20System.pdf)
 
 
 
