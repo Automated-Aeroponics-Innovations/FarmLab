@@ -24,7 +24,7 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 
 **Project Kanban Boards**
 
-| Part |      Title                
+| #    |      Title                
 |------|---------------------------
 | 1    | [FarmLab](https://github.com/Automated-Aeroponics-Innovations/FarmLab/projects/1)
 | 2    | [BaluLab - Digital Agriculture](https://github.com/balu-lab/Digital_AG/projects/1)
@@ -34,7 +34,7 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 
 **Documentation**
 
-| Part |      Title                
+| #    |      Title                
 |------|---------------------------
 | 1    | [Why Build an Automated Aeroponics Laboratory](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/0%20-%20Why%20build%20an%20Automated%20Aeroponics%20Laboratory%20System.pdf)
 | 2    | [Agility of the Automated Aeroponics Laboratory System Software](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/1%20-%20Agility%20of%20AALS%20Development.pdf) 
@@ -72,7 +72,7 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 
 **Literature Review**
 
-| Part  |      Section                
+| #     |      Article               
 |-------|---------------------------
 | 1     | [Determination of Leaf Water Content by Visible and Near-Infrared Spectrometry and Multivariate Calibration in Miscanthus by Xiaoli jin, et al](https://www.frontiersin.org/articles/10.3389/fpls.2017.00721/full)
 | 2     | [In Vivo Biosensing, Coppede et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/An%20in%20vivo%20biosensing%2C%20biomimetic%20electrochemical%20transistor%20with%20applications%20in%20plant%20science%20and%20precision%20farming.pdf)
@@ -88,8 +88,10 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 
 **Developer Bio**
 
-| Part |      Section                
+| #    |      Curricula                
 |------|---------------------------
 | 1    | [Statement of Purpose](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/ARJW%20Statement%20of%20Purpose.pdf)
 | 2    | [LinkedIn](https://www.linkedin.com/in/anthemrukiya/)
 | 3    | [jiNx - not just Software](https://anthemwingate.github.io/jiNx/)
+| 4    | [Masters Coursework]()
+| 5    | [PhD Coursework]()
