@@ -93,5 +93,5 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 | 1    | [Statement of Purpose](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/ARJW%20Statement%20of%20Purpose.pdf)
 | 2    | [LinkedIn](https://www.linkedin.com/in/anthemrukiya/)
 | 3    | [jiNx - not just Software](https://anthemwingate.github.io/jiNx/)
-| 4    | [Masters Coursework](https://github.com/anthemwingate/MastersCV)
-| 5    | [PhD Coursework](https://github.com/anthemwingate/phdcv)
+| 4    | [Masters Coursework (private repo - email request for access)](https://github.com/anthemwingate/MastersCV)
+| 5    | [PhD Coursework (private repo - email request for access)](https://github.com/anthemwingate/phdcv)
