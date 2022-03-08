@@ -94,4 +94,4 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 | 2    | [LinkedIn](https://www.linkedin.com/in/anthemrukiya/)
 | 3    | [jiNx - not just Software](https://anthemwingate.github.io/jiNx/)
 | 4    | [Masters Coursework]()
-| 5    | [PhD Coursework]()
+| 5    | [PhD Coursework](https://github.com/anthemwingate/phdcv)
