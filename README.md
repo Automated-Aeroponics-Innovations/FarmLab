@@ -27,7 +27,7 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 | #    |      Title                
 |------|---------------------------
 | 1    | [FarmLab](https://github.com/Automated-Aeroponics-Innovations/FarmLab/projects/1)
-| 2    | [BaluLab - Digital Agriculture](https://github.com/balu-lab/Digital_AG/projects/1)
+| 2    | [BaluLab - Digital Agriculture (private repo - email request for access)](https://github.com/balu-lab/Digital_AG/projects/1)
 
 
 
@@ -51,6 +51,20 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 | 13   | [FarmLab Phase 2 Redesign: Nutrient Delivery System](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Nutrient%20Delivery%20System.pdf)
 
 
+**Literature Review**
+
+| #   |      Article               
+|-----|---------------------------
+| 1   | [Determination of Leaf Water Content by Visible and Near-Infrared Spectrometry and Multivariate Calibration in Miscanthus by Xiaoli jin, et al](https://www.frontiersin.org/articles/10.3389/fpls.2017.00721/full)
+| 2   | [In Vivo Biosensing, Coppede et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/An%20in%20vivo%20biosensing%2C%20biomimetic%20electrochemical%20transistor%20with%20applications%20in%20plant%20science%20and%20precision%20farming.pdf)
+| 3   | [Crop productivities and radiation use efficiencies, Wheeler et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Adv-Space-Res-2008-Crop-Prod-and-Rad-Use-Eff.pdf)
+| 4   | [The MLOps Engineer Role: A Gentle Introduction](https://towardsdatascience.com/the-mlops-engineer-role-a-gentle-introduction-8d94cdc73904)
+| 5   | [Water and nitrogen in-situ imaging detection in live corn leaves using near-infrared camera and interference filter by Zhang et al](https://plantmethods.biomedcentral.com/track/pdf/10.1186/s13007-021-00815-5.pdf)
+| 6   | [NIR Applications in Agriculture by Trimble](https://felixinstruments.com/blog/nir-applications-in-agriculture-everything-you-need-to-know-for-2020/)
+| 7   | [Determination of Leaf Water Content by Visible and Near-Infrared Spectrometry and Multivariate Calibration in Miscanthus by Jin et al](https://www.frontiersin.org/articles/10.3389/fpls.2017.00721/full)
+| 8   | [Carbon NanoTubule Optical Probes and Sensors Merav Antman-Passig et al 2019 Electrochem. Soc. Interface 28 61](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/SWCNT_Igantova_2019.pdf)
+
+
 
 
 **Progress Reports**
@@ -59,22 +73,6 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 |-----------|---------------------------
 | 07MAR2022 | [Drip Hydro](https://youtu.be/kHuJHQqgwsgg)
 | 07MAR2022 | [Crop King Gutter system](https://youtu.be/R-Y2thaPCig)
-
-
-
-
-**Literature Review**
-
-| #     |      Article               
-|-------|---------------------------
-| 1     | [Determination of Leaf Water Content by Visible and Near-Infrared Spectrometry and Multivariate Calibration in Miscanthus by Xiaoli jin, et al](https://www.frontiersin.org/articles/10.3389/fpls.2017.00721/full)
-| 2     | [In Vivo Biosensing, Coppede et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/An%20in%20vivo%20biosensing%2C%20biomimetic%20electrochemical%20transistor%20with%20applications%20in%20plant%20science%20and%20precision%20farming.pdf)
-| 3     | [Crop productivities and radiation use efficiencies, Wheeler et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Adv-Space-Res-2008-Crop-Prod-and-Rad-Use-Eff.pdf)
-| 4     | [The MLOps Engineer Role: A Gentle Introduction](https://towardsdatascience.com/the-mlops-engineer-role-a-gentle-introduction-8d94cdc73904)
-| 5     | [Water and nitrogen in-situ imaging detection in live corn leaves using near-infrared camera and interference filter by Zhang et al](https://plantmethods.biomedcentral.com/track/pdf/10.1186/s13007-021-00815-5.pdf)
-| 6     | [NIR Applications in Agriculture by Trimble](https://felixinstruments.com/blog/nir-applications-in-agriculture-everything-you-need-to-know-for-2020/)
-| 7     | [Determination of Leaf Water Content by Visible and Near-Infrared Spectrometry and Multivariate Calibration in Miscanthus by Jin et al](https://www.frontiersin.org/articles/10.3389/fpls.2017.00721/full)
-| 8     | [Carbon NanoTubule Optical Probes and Sensors Merav Antman-Passig et al 2019 Electrochem. Soc. Interface 28 61](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/SWCNT_Igantova_2019.pdf)
 
 
 
