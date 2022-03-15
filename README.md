@@ -52,6 +52,8 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 | 6   | [NIR Applications in Agriculture by Trimble](https://felixinstruments.com/blog/nir-applications-in-agriculture-everything-you-need-to-know-for-2020/)
 | 7   | [Determination of Leaf Water Content by Visible and Near-Infrared Spectrometry and Multivariate Calibration in Miscanthus by Jin et al](https://www.frontiersin.org/articles/10.3389/fpls.2017.00721/full)
 | 8   | [Carbon NanoTubule Optical Probes and Sensors Merav Antman-Passig et al 2019 Electrochem. Soc. Interface 28 61](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/SWCNT_Igantova_2019.pdf)
+| 9   | [Agilent Technologies: HPLC for Food Analysis](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/HPLC%20For%20Food%20Analysis%20Agilent%20Technologies.pdf)
+| 10  | [Determination of Plant Hormones in Fertilizers by Gambino et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Determination_of_plant_hormones_in_ferti.pdf)
 
 
 
