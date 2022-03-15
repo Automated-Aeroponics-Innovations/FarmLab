@@ -37,7 +37,7 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 | 10   | [Development Plan](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/9%20-%20Development%20Plan.pdf)
 | 11   | [System Development Plan](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/9%20-%20System%20Development%20Plan.pdf)
 | 12   | [FarmLab Photo Retrospective](https://youtu.be/E-TNKgtvq4k)
-| 13   | [FarmLab Phase 2 Redesign: Nutrient Delivery System](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Nutrient%20Delivery%20System.pdf)
+| 13   | [FarmLab Phase 2 Redesign: Nutrient Delivery System](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Nutrient%20Delivery%20System%20refactor.pdf)
 
 
 **Literature Review**
