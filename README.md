@@ -54,6 +54,8 @@ FarmLab, and similar digital agriculture projects, will one day help us to solve
 | 8   | [Carbon NanoTubule Optical Probes and Sensors Merav Antman-Passig et al 2019 Electrochem. Soc. Interface 28 61](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/SWCNT_Igantova_2019.pdf)
 | 9   | [Agilent Technologies: HPLC for Food Analysis](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/HPLC%20For%20Food%20Analysis%20Agilent%20Technologies.pdf)
 | 10  | [Determination of Plant Hormones in Fertilizers by Gambino et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Determination_of_plant_hormones_in_ferti.pdf)
+| 11  | [Nicolson F, Andreiuk B, Andreou C, Hsu HT, Rudder S, Kircher MF. Non-invasive In Vivo Imaging of Cancer Using Surface-Enhanced Spatially Offset Raman Spectroscopy (SESORS). Theranostics. 2019;9(20):5899-5913. Published 2019 Aug 13. doi:10.7150/thno.36321](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Non-Invasive%20In%20Vivo%20Imaging%20of%20Cancer.pdf)
+| 12  | [In-Vivo Raman Spectroscopy: from Basics to Applications Cordero et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/In-Vivo%20Raman%20Spectroscopy.pdf)
 
 
 
