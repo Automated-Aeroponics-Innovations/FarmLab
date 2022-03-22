@@ -18,6 +18,12 @@ Dr. Abraham Stroock at Cornell is one of a handful of scientists pioneering this
 
 FarmLab, and similar digital agriculture projects, will one day help us to solve food insecurity and to open the door to deep space exploration.  Think of FarmLab as one among the first handful  of state of the art prototypes for systems so precise that they regulate nutrient delivery and lighting based on the output of a sensor on a single leaf of a plant.  This is the core purpose of FarmLab, digital agriculture innovation.  What FarmLab proposes is not simply a lab fully automated by ML algorithms, but a lab regulated by the very plants themselves.  
 
+If we take FarmLab even a single step beyond its current research purpose as an agricultural automation system in the hopes of identifying additional means of its utility, we can envision that process analytical technologies such as the integration of nanoengineered biosensors with MLOps via bioinformatics software are effectively creating an artificial biofeedback system in turn meant to emulate autonomic responses with accuracy and precision.  As a considerable example, if it is our aim to one day very soon fabricate prostheses that fully emulate the human body, this is a good preparatory step to creating prosthetic limbs and organs which operate with equivalent sense and sensation as those anatomies which they are intended to replace.
+
+* see:  [Zhuang, K.Z., Sommer, N., Mendez, V. et al. Shared human–robot proportional control of a dexterous myoelectric prosthesis. Nat Mach Intell 1, 400–411 (2019).](https://doi.org/10.1038/s42256-019-0093-5)
+
+* see also: [Liu W, Lu B. Multi-Stream Convolutional Neural Network-Based Wearable, Flexible Bionic Gesture Surface Muscle Feature Extraction and Recognition. Front Bioeng Biotechnol. 2022;10:833793. Published 2022 Mar 3. doi:10.3389/fbioe.2022.833793](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8927293/)
+
 
 
 
