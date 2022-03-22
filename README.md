@@ -65,6 +65,7 @@ If we take FarmLab even a single step beyond its current research purpose as an 
 | 12  | [In-Vivo Raman Spectroscopy: from Basics to Applications Cordero et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/In-Vivo%20Raman%20Spectroscopy.pdf)
 | 13  | [Toward Flexible Surface-Enhanced Raman Scattering (SERS) Sensors for Point-of-Care Diagnostics](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Advanced%20Science%20-%202019%20-%20Xu%20-%20Toward%20Flexible%20Surface%E2%80%90Enhanced%20Raman%20Scattering%20%20SERS%20%20Sensors%20for%20Point%E2%80%90of%E2%80%90Care.pdf)
 | 14  | [Mathematical principles and models of plant growth mechanics Smithers et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Mathematical%20principles%20and%20models%20of%20plant%20growth%20mechanics.pdf)
+| 15  | [Liu W, Lu B. Multi-Stream Convolutional Neural Network-Based Wearable, Flexible Bionic Gesture Surface Muscle Feature Extraction and Recognition. Front Bioeng Biotechnol. 2022;10:833793. Published 2022 Mar 3. doi:10.3389/fbioe.2022.833793](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Multi-Stream%20Convolutional%20Neural%20network-Based%20Wearable.pdf)
 
 
 
