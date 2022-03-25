@@ -41,7 +41,7 @@ If we take FarmLab even a single step beyond its current research purpose as an 
 | 8    | [Product Development Cycle](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/7%20-%20Product%20Development%20Cycle%20Jira%20Report.pdf)
 | 9    | [Software Requirements Specification](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/8%20-%20Software%20Requirements.pdf)
 | 10   | [Development Plan](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/9%20-%20Development%20Plan.pdf)
-| 11   | [System Development Plan](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/9%20-%20System%20Development%20Plan.pdf)
+| 11   | [System Development Plan](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/System%20Development%20Plan.pdf)
 | 12   | [FarmLab Photo Retrospective](https://youtu.be/E-TNKgtvq4k)
 | 13   | [FarmLab Phase 2 Redesign: Nutrient Delivery System](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Nutrient%20Delivery%20System%20refactor%202nd.pdf)
 | 13.5 | [FarmLab Phase 2 Redesign: Nutrient Delivery System Refactor Supplemental Material](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/NutrientDoserRefactorConnections.pdf)
