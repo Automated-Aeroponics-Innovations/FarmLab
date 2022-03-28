@@ -57,7 +57,7 @@ If we take FarmLab even a single step beyond its current research purpose as an 
 | 2   | [Crop productivities and radiation use efficiencies, Wheeler et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Adv-Space-Res-2008-Crop-Prod-and-Rad-Use-Eff.pdf)
 | 3   | [The MLOps Engineer Role: A Gentle Introduction](https://towardsdatascience.com/the-mlops-engineer-role-a-gentle-introduction-8d94cdc73904)
 | 4   | [Agilent Technologies: HPLC for Food Analysis](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/HPLC%20For%20Food%20Analysis%20Agilent%20Technologies.pdf)
-| 5   | [B03-0714 - Machine Learning for Carbon Nanotube Optical Sensors](https://ecs.confex.com/ecs/241/meetingapp.cgi/Paper/159177)
+| 5   | [241st ECS Meeting 29MAY2022 - Session B03-0714 - Machine Learning for Carbon Nanotube Optical Sensors](https://ecs.confex.com/ecs/241/meetingapp.cgi/Paper/159177)
 
 
 
