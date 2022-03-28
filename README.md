@@ -52,13 +52,13 @@ If we take FarmLab even a single step beyond its current research purpose as an 
 
 | #   |      Article               
 |-----|---------------------------
-| 1   | [Determination of Leaf Water Content by Visible and Near-Infrared Spectrometry and Multivariate Calibration in Miscanthus by Xiaoli jin, et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Determination%20of%20LEaf%20Water%20COntent%20by%20Visible%20and%20NIR%20Spectrometry.pdf)
+| 1   | 
 | 2   | [In Vivo Biosensing, Coppede et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/An%20in%20vivo%20biosensing%2C%20biomimetic%20electrochemical%20transistor%20with%20applications%20in%20plant%20science%20and%20precision%20farming.pdf)
 | 3   | [Crop productivities and radiation use efficiencies, Wheeler et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Adv-Space-Res-2008-Crop-Prod-and-Rad-Use-Eff.pdf)
 | 4   | [The MLOps Engineer Role: A Gentle Introduction](https://towardsdatascience.com/the-mlops-engineer-role-a-gentle-introduction-8d94cdc73904)
 | 5   | [Water and nitrogen in-situ imaging detection in live corn leaves using near-infrared camera and interference filter by Zhang et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Water%20and%20Nitrogen%20in-situ%20imaging%20detection%20in%20live%20corn%20leaves.pdf)
 | 6   | [NIR Applications in Agriculture by Trimble](https://felixinstruments.com/blog/nir-applications-in-agriculture-everything-you-need-to-know-for-2020/)
-| 7   | [Determination of Leaf Water Content by Visible and Near-Infrared Spectrometry and Multivariate Calibration in Miscanthus by Jin et al](https://www.frontiersin.org/articles/10.3389/fpls.2017.00721/full)
+| 7   | [Determination of Leaf Water Content by Visible and Near-Infrared Spectrometry and Multivariate Calibration in Miscanthus by Xiaoli jin, et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Determination%20of%20LEaf%20Water%20COntent%20by%20Visible%20and%20NIR%20Spectrometry.pdf)
 | 8   | [Carbon NanoTubule Optical Probes and Sensors Merav Antman-Passig et al 2019 Electrochem. Soc. Interface 28 61](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/SWCNT_Igantova_2019.pdf)
 | 9   | [Agilent Technologies: HPLC for Food Analysis](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/HPLC%20For%20Food%20Analysis%20Agilent%20Technologies.pdf)
 | 10  | [Determination of Plant Hormones in Fertilizers by Gambino et al](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Determination_of_plant_hormones_in_ferti.pdf)
