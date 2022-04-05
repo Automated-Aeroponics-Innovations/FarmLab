@@ -44,7 +44,7 @@ If we take FarmLab even a single step beyond its current research purpose as an 
 | 11   | [System Development Plan](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/System%20Development%20Plan.pdf)
 | 12   | [FarmLab Photo Retrospective](https://youtu.be/E-TNKgtvq4k)
 | 13   | [FarmLab Phase 2 Redesign: Nutrient Delivery System](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Nutrient%20Delivery%20System%20refactor%202nd.pdf)
-| 13.5 | [FarmLab Phase 2 Redesign: Nutrient Delivery System Refactor Supplemental Material](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/NutrientDoserRefactorConnections.pdf)
+| 13.5 | [FarmLab Phase 2 Redesign: Nutrient Delivery System Refactor Supplemental Material](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Nutrient%20Delivery%20System%20refactor%203rd.pdf)
 | 14   | [FarmLab Phase 2 Redesign: Drip Hydro Side View](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/Supplemental%20Documents/Drip%20Hydro%20Side%20and%20Rear%20view.pdf)
 
 
