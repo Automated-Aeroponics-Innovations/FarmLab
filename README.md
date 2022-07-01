@@ -50,6 +50,7 @@ If we take FarmLab even a single step beyond its current research purpose as an 
 
 
 **Online Resources**
+
 | #   |      URL               
 |-----|---------------------------
 | 1   | [NIR Applications in Agriculture by Trimble](https://felixinstruments.com/blog/nir-applications-in-agriculture-everything-you-need-to-know-for-2020/)
