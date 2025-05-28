@@ -1,4 +1,4 @@
-![FarmLab](https://github.com/Automated-Aeroponics-Innovations/FarmLab/blob/main/FarmLab%20%20Front%20Page.svg)
+<img src="https://raw.githubusercontent.com/Automated-Aeroponics-Innovations/FarmLab/main/farmlab-frontpage.svg" alt="FarmLab">
 
 The ultimate goal of FarmLab is to one day produce a scalable, ML-operated aeroponics pilot program that can support the subsistence agriculture needs of communities in food deserts - that's serving thousands of people from a single site the size of a football field.  This endeavor was largely inspired by the research conducted by [NASA on the ISS](https://www.nasa.gov/content/growing-plants-in-space).
 
