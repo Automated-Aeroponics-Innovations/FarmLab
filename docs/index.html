@@ -132,7 +132,7 @@ function createWall(opts){
 function createRenderer(canvas, chartCanvas){
   const ctx=canvas.getContext('2d'); const cctx=chartCanvas.getContext('2d'); let dpr=1, vw=0, vh=0;
   function resize(){ dpr=Math.min(2,devicePixelRatio||1); vw=canvas.clientWidth; vh=canvas.clientHeight; canvas.width=vw*dpr; canvas.height=vh*dpr; ctx.setTransform(dpr,0,0,dpr,0,0); chartCanvas.width=chartCanvas.clientWidth*dpr; chartCanvas.height=chartCanvas.clientHeight*dpr; cctx.setTransform(dpr,0,0,dpr,0,0); }
-  function layout(w){ const padR = vw>1100 ? 340 : 0, padT = vw>760 ? 100 : 0, padB = 160; const W=vw-padR-60, H=vh-padT-padB; const cellW=W/w.COLS, tierH=H/w.TIERS; return {ox:30, oy:padT, W, H, cellW, tierH}; }
+  function layout(w){ const padR = vw>1100 ? 340 : 0, padT = vw>760 ? 290 : 0, padB = 160; const W=vw-padR-60, H=vh-padT-padB; const cellW=W/w.COLS, tierH=H/w.TIERS; return {ox:30, oy:padT, W, H, cellW, tierH}; }
   function leaf(x,y,len,ang,col){ ctx.save(); ctx.translate(x,y); ctx.rotate(ang); ctx.beginPath(); ctx.moveTo(0,0); ctx.quadraticCurveTo(len*.5,-len*.35,len,0); ctx.quadraticCurveTo(len*.5,len*.35,0,0); ctx.fillStyle=col; ctx.fill(); ctx.restore(); }
   function draw(w, now){
     const S=w.S; const L=layout(w); ctx.fillStyle='#070a08'; ctx.fillRect(0,0,vw,vh);
