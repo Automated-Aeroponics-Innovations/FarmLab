@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070a08">
+<meta name="description" content="FarmLab: a lab regulated by the plants themselves. A simulated aeroponic grow wall with light and mist cycles, a plant-stress sensor loop that drives the misting, and the retraining cadence that keeps the controller current. With photographs of the lab.">
+<title>FarmLab · A lab regulated by the plants</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%23070a08%27/%3E%3Ctext x=%2716%27 y=%2722%27 font-size=%2718%27 text-anchor=%27middle%27 fill=%27%2384c67c%27%3E%E2%9D%80%3C/text%3E%3C/svg%3E">
+<style>
+:root{color-scheme:dark;--bg:#070a08;--fg:#ecefe6;--dim:#97a393;--line:#ffffff22;--panel:#0c1310ee;--leaf:#84c67c;--mist:#9fd8e8;--led:#ff8bd0;--amber:#f0b35a;--soil:#6b4b2e}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--fg);font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+button,select{font:inherit;color:var(--fg);background:#111a14;border:1px solid var(--line);border-radius:6px;min-height:40px;padding:8px 13px;cursor:pointer;transition:background .18s,border-color .18s}button:hover,select:hover{background:#1b2a1f;border-color:#9bd394}button[aria-pressed=true]{color:var(--amber);border-color:#f0b35a88;background:#3a2c1680}button:focus-visible,select:focus-visible,canvas:focus-visible,a:focus-visible{outline:2px solid var(--amber);outline-offset:3px}button.primary{background:var(--amber);color:#17120a;border-color:var(--amber);font-weight:700}button.quiet{background:transparent}a{color:inherit;text-underline-offset:4px}[hidden]{display:none!important}
+#app{position:relative;height:100%;isolation:isolate}#stage{position:absolute;inset:0}#c{display:block;width:100%;height:100%;cursor:crosshair;touch-action:manipulation}#stage:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(#070a08e6 0%,#070a0833 15%,transparent 30%,transparent 62%,#070a0899 84%,#070a08ee 100%)}
+.header{position:absolute;z-index:4;left:32px;right:32px;top:22px;display:flex;align-items:flex-start;justify-content:space-between;gap:20px;pointer-events:none}.header>*{pointer-events:auto}.brand h1{font-size:23px;letter-spacing:-1px;margin:0;line-height:1.15;font-weight:600}.brand h1 .mark{color:var(--leaf);font-size:24px;margin-right:10px;vertical-align:-2px}.eyebrow{text-transform:uppercase;font-size:10px;letter-spacing:2px;color:var(--dim)}.brand .eyebrow{margin:8px 0 0 38px;font-size:9px;letter-spacing:1.6px}.header-right{display:flex;align-items:center;gap:10px}.session{display:flex;align-items:center;gap:8px;margin-right:8px;font-size:10px;color:var(--leaf);letter-spacing:1px;text-transform:uppercase}.session:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--leaf);box-shadow:0 0 10px #84c67c88}
+.context{position:absolute;z-index:2;left:32px;top:112px;pointer-events:none;max-width:540px}.context h2{font:500 clamp(22px,3vw,36px)/1.25 ui-monospace,Menlo,monospace;letter-spacing:-1.5px;margin:8px 0 10px;text-shadow:0 2px 12px #070a08}.context p{color:#c3cdbf;font-size:12px;margin:0}
+.hud{position:absolute;z-index:2;top:120px;right:32px;display:grid;grid-template-columns:repeat(3,auto);gap:14px 26px;text-align:right}.stat .k{display:block;color:#aeb9ab;font-size:9px;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:3px}.stat .v{font-size:17px}.stat .sub{display:block;font-size:9px;color:var(--dim);margin-top:2px}.stat .v.warn{color:var(--amber)}.stat .v.mode{color:var(--mist);font-size:13px;text-transform:uppercase;letter-spacing:1px}
+#chart{position:absolute;z-index:3;right:32px;top:262px;width:300px;height:118px;border:1px solid var(--line);border-radius:9px;background:#0c1310cc;backdrop-filter:blur(8px)}#chart canvas{display:block;width:100%;height:100%}
+.bottom{position:absolute;z-index:4;bottom:max(20px,env(safe-area-inset-bottom));left:32px;right:32px;display:grid;gap:12px;pointer-events:none}.bottom>*{pointer-events:auto}.caption{display:flex;justify-content:space-between;gap:12px;color:#cfd8ca;font-size:10px}.caption p{margin:0}.caption .index{color:var(--amber);margin-right:8px}.caption .detail{color:var(--dim);font-size:9px}
+.deck{border:1px solid #a9bda72e;border-radius:11px;background:linear-gradient(120deg,#111b16f5,#0a1110f5);box-shadow:0 14px 48px #0007,0 1px 0 #ffffff08 inset;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;gap:18px;backdrop-filter:blur(14px);flex-wrap:wrap}.group{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.group-label{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:1.3px;margin-right:6px}.deck button,.deck select{font-size:11px;white-space:nowrap}.divider{height:28px;width:1px;background:var(--line)}.footer{display:flex;justify-content:space-between;gap:20px;color:var(--dim);font-size:9px}.footer p{margin:0}.key{border:1px solid #ffffff35;border-radius:3px;padding:1px 4px;color:#d0d4c5;font-size:9px}
+#toast{position:absolute;z-index:6;left:50%;bottom:190px;transform:translateX(-50%);padding:10px 18px;border:1px solid #9bd39450;border-radius:7px;background:#0c1914f5;color:#dcead1;box-shadow:0 8px 35px #0006;pointer-events:none;font-size:12px;max-width:90vw;opacity:0;transition:opacity .2s}#toast.show{opacity:1}
+#loading{position:absolute;inset:0;z-index:3;display:grid;place-content:center;text-align:center;pointer-events:none;background:#070a08;transition:opacity .5s}#loading.loaded{opacity:0}#loading strong{color:var(--amber);font-size:22px}#loading p{color:var(--dim);font-size:11px}#loading .g{letter-spacing:8px;font-size:26px;margin-bottom:18px;color:var(--leaf)}
+#notes{position:absolute;inset:0;z-index:5;background:#060908;overflow:auto;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .35s,visibility .35s;padding:100px 32px 60px}#notes.on{opacity:1;visibility:visible;pointer-events:auto}#noteshud{position:absolute;left:32px;right:32px;top:24px;display:flex;justify-content:space-between;gap:20px;align-items:flex-start}#noteshud h2{font-size:23px;letter-spacing:-1px;margin:5px 0 8px}#noteshud p{color:var(--dim);font-size:11px;margin:0}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;max-width:1400px;margin:0 auto}.note{border:1px solid var(--line);border-radius:10px;background:#0c1310;overflow:hidden;cursor:pointer}.note img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;background:#0b100d}.note figcaption{padding:10px 12px;font-size:11px;color:#c3cdbf}.note figcaption b{display:block;color:var(--fg);margin-bottom:3px}.note:hover{border-color:#9bd394}
+dialog{color:var(--fg);width:min(560px,calc(100% - 32px));border:1px solid #9bd39444;border-radius:14px;padding:28px;background:#0b1210;box-shadow:0 20px 100px #000b}dialog.photo{width:min(1100px,calc(100% - 32px));padding:12px}dialog.photo img{display:block;width:100%;max-height:82vh;object-fit:contain}dialog.photo p{margin:8px 4px 2px;font-size:12px;color:#c3cdbf}dialog::backdrop{background:#020807bb;backdrop-filter:blur(5px)}dialog h2{font-size:21px;letter-spacing:-.8px;margin-top:0}dialog p,dialog li{color:#b7c0ae;font-size:12px}dialog .legend{display:grid;grid-template-columns:110px 1fr;gap:10px;margin:22px 0;font-size:12px}.legend b{color:var(--amber);font-weight:400}.legend span{color:var(--dim)}dialog .actions{text-align:right;margin-top:22px}.shortcut{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:8px 0;color:#b7c0ae;font-size:11px}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:1100px){#chart{display:none}.context h2{font-size:26px}.footer .principle{display:none}}
+@media(max-width:760px){.header{left:16px;right:16px;top:18px}.brand h1{font-size:19px}.brand .eyebrow{margin-left:0;font-size:8px}.session{display:none}.context{left:16px;top:96px;right:16px;max-width:none}.context h2{font-size:22px}.context p{display:none}.hud{left:16px;right:16px;top:160px;text-align:left;grid-template-columns:repeat(3,1fr);gap:8px}.stat .v{font-size:15px}.bottom{left:10px;right:10px;bottom:10px;gap:8px}.deck{padding:10px;gap:8px;justify-content:center}.divider,.group-label{display:none}.caption{justify-content:center;font-size:9px}.caption .detail{display:none}.footer{justify-content:center;font-size:8px}#stage{top:200px;bottom:150px}#toast{bottom:200px}#notes{padding:90px 16px 40px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main id="app">
+<section id="stage" aria-label="FarmLab grow wall simulation">
+<canvas id="c" tabindex="0" role="img" aria-label="A simulated aeroponic grow wall: four tiers of pots under LED bars that dim at night, misters that pulse along a manifold, plants that grow by light and mist, and a stress reading from the leaves that triggers the next pulse. Click a pot to stress its plant."></canvas>
+</section>
+<header class="header"><div class="brand"><h1><span class="mark" aria-hidden="true">❀</span>FarmLab</h1><p class="eyebrow">A lab regulated by the plants</p></div><nav class="header-right" aria-label="Explore"><span class="session" id="session">Growing</span><button id="tonotes" aria-pressed="false" aria-controls="notes"><span aria-hidden="true" style="color:var(--amber);margin-right:8px">◎</span>Field notes</button><button id="help" class="quiet" aria-label="How to read this">?</button></nav></header>
+<div class="context"><div class="eyebrow">Grow wall <span style="color:var(--amber)">/ wall 01</span></div><h2 id="headline">Light. Mist.<br>A leaf decides.</h2><p>Four tiers of pots under LED bars. The misters pulse on a schedule, and sooner when a leaf reports stress. Fresh readings retrain the controller.</p></div>
+<section class="hud" aria-label="Lab status" aria-live="polite" aria-atomic="false">
+<div class="stat"><span class="k">Lab time</span><span class="v" id="t">06:00</span><span class="sub" id="daystate">a day in 2 minutes</span></div>
+<div class="stat"><span class="k">Lights</span><span class="v mode" id="lights">rising</span><span class="sub" id="ppfd">0 µmol·m⁻²·s⁻¹</span></div>
+<div class="stat"><span class="k">Mist</span><span class="v mode" id="mist">idle</span><span class="sub" id="nextmist">timer pulse in 360 min</span></div>
+<div class="stat"><span class="k">Leaf stress</span><span class="v" id="stress">0.00</span><span class="sub">mean index, 0 calm to 1 wilting</span></div>
+<div class="stat"><span class="k">Chamber</span><span class="v" id="rh">—</span><span class="sub" id="temp">—</span></div>
+<div class="stat"><span class="k">Controller</span><span class="v" id="model">v1</span><span class="sub" id="retrain">retrains every 3 days</span></div>
+</section>
+<div id="chart" aria-hidden="true"><canvas id="chartc"></canvas></div>
+<div class="bottom">
+<div class="caption"><p><span class="index" aria-hidden="true">↳</span><span id="caption">Click a pot to stress its plant and watch the loop answer.</span></p><span class="detail" id="detail">Seeded, deterministic. Reseed for another wall.</span></div>
+<section class="deck" aria-label="Controls">
+<div class="group"><button id="pause" aria-pressed="false" title="Pause or resume (Space)">Ⅱ Pause</button><button id="speed" aria-pressed="false" title="Fast time (F)">1× Time</button><button id="reseed" title="New wall (R)">↻ Reseed</button></div>
+<div class="divider"></div>
+<div class="group"><span class="group-label">Control</span><button id="auto" aria-pressed="true" title="Let the plants drive the misting">Plant-regulated</button><button id="timer" aria-pressed="false" title="Fixed timer only">Timer only</button></div>
+<div class="divider"></div>
+<div class="group"><span class="group-label">Events</span><button id="dry" title="A dry spell: humidity drops (D)">Dry spell</button><button id="pulse" title="Mist now (M)">Mist now</button><button id="night" title="Toggle the lights (N)">Lights</button></div>
+</section>
+<footer class="footer"><p class="principle"><span style="color:#bed0b0">Not a lab automated by a model. A lab regulated by the plants.</span></p><p><span class="key">Space</span> pause <span aria-hidden="true">·</span> <span class="key">F</span> fast <span aria-hidden="true">·</span> <span class="key">M</span> mist <span aria-hidden="true">·</span> <span class="key">D</span> dry spell <span aria-hidden="true">·</span> <span id="perf">rendering</span></p><p>A simulation of the mechanics. The photographs are the lab.</p></footer>
+</div>
+<div id="loading" role="status"><div class="g" aria-hidden="true">· ❀ ·</div><strong>Raising a small wall.</strong><p>Pots, lights, misters, and a leaf that decides.</p></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<p class="sr" id="description">An animated simulation of an aeroponic grow wall. Plants in pots grow under lights that follow a day cycle; misters pulse along a manifold; a stress index rises when plants dry and falls after a pulse. Status values report lab time, light level, mist state, mean leaf stress, chamber humidity and temperature, and the controller version. A field-notes view shows fourteen photographs of the lab with captions.</p>
+<section id="notes" aria-label="Field notes: photographs of the lab" aria-hidden="true" inert>
+<div id="noteshud"><div><div class="eyebrow">FarmLab / Field notes</div><h2>The lab, 2026.</h2><p>Fourteen photographs. Click one to see it large.</p></div><button id="back">← Back to the wall</button></div>
+<div class="grid" id="grid"></div>
+</section>
+<dialog id="photo-dialog" class="photo" aria-label="Photograph"><img id="photo-img" alt=""><p id="photo-cap"></p><form method="dialog" class="actions"><button class="primary">Close</button></form></dialog>
+<dialog id="help-dialog" aria-labelledby="help-title"><h2 id="help-title">How to read the wall</h2><p>This page runs a small model of FarmLab's control loop in your browser. It is a sketch of the mechanics, not the lab's own software.</p>
+<div class="legend"><b>pots</b><span>Plants grow by light and mist. Leaves droop as they dry.</span><b>LED bars</b><span>Follow a day cycle; light drives growth and water use.</span><b>misters</b><span>Pulse along the manifold on a timer, and sooner when stress rises in plant-regulated mode.</span><b>stress index</b><span>What a leaf sensor would report: 0 calm, 1 wilting.</span><b>controller</b><span>Retrains on fresh readings every few days; after a dry spell its next version mists earlier.</span></div>
+<p>Switch to <b>Timer only</b> and trigger a dry spell to see what a fixed schedule misses. Switch back to let the plants drive.</p>
+<div class="shortcut"><span>Pause / resume</span><kbd>Space</kbd></div><div class="shortcut"><span>Fast time</span><kbd>F</kbd></div><div class="shortcut"><span>Mist now / dry spell / lights</span><kbd>M / D / N</kbd></div><div class="shortcut"><span>Field notes</span><kbd>P</kbd></div>
+<p>Nothing is recorded. Reload for the same wall; reseed for another.</p>
+<form method="dialog" class="actions"><button class="primary">Back to the wall</button></form></dialog>
+<div id="error" role="alert" hidden></div><noscript><p>This simulation needs JavaScript.</p></noscript>
+</main>
+<script>
+'use strict';
+const NOTES = [
+ ['001.jpg','The grow wall','Four tiers of pots on a timber frame under LED bars, the lab\'s first vertical aeroponic wall.'],
+ ['005.jpg','The propagation wall','Domed seedling trays and net-pot inserts, where every planting starts.'],
+ ['002.jpg','Fogging chambers','Sealed grow chambers on the bench with ducted misting, the unit of the modular fogging system.'],
+ ['007.jpg','The fogging manifold','The modular manifold assembled along the bench with its drivers: one mister per station.'],
+ ['013.jpg','Manifold prototype','The printed manifold wired for its misters before it goes onto the wall.'],
+ ['014.jpg','Dosing unit','A printed enclosure with a peristaltic pump, the nutrient dosing stage.'],
+ ['003.jpg','Raised beds','Soil beds under lights in the sunroom: the control condition and the kitchen garden.'],
+ ['004.jpg','At the window','Self-watering pots and lavender trays, grown alongside the automated wall.'],
+ ['008.jpg','The light rig','LED bars on aluminium extrusion over the jar rail, with the lab display behind.'],
+ ['006.jpg','Seed starting','Domed trays with net-pot inserts on the rack.'],
+ ['012.jpg','Edge vision node','A Jetson Orin Nano with its camera module: the lab\'s eyes, running detection at the edge.'],
+ ['010.jpg','Fabrication','Resin and filament printers with wash and cure stations; most of the lab\'s fittings are printed here.'],
+ ['009.jpg','The floor','Bench, desk and lumber for the next wall.'],
+ ['011.jpg','Tools and parts','The tool wall and drawers that keep the build moving.'],
+];
+// ------------------------------------------------------------------ engine
+function createWall(opts){
+  let st = (opts.seed>>>0)||1; const rnd=()=>{ st += 0x6D2B79F5; let t=st; t=Math.imul(t ^ t>>>15, t|1); t ^= t + Math.imul(t ^ t>>>7, t|61); return ((t ^ t>>>14)>>>0)/4294967296; };
+  const TIERS=4, COLS=12, DAY=120; // seconds of lab time per day at 1x
+  const plants=[]; for(let r=0;r<TIERS;r++) for(let c=0;c<COLS;c++) plants.push({r,c,size:.08+rnd()*.25,water:.7+rnd()*.2,stress:0,leaves:3+Math.floor(rnd()*3),hue:95+rnd()*30,phase:rnd()*6.28});
+  const S={ t:6*3600, lights:0, rh:.72, temp:22.5, mist:0, mistTimer:21600, mistPeriod:28800, auto:true, model:1, lastRetrain:0, days:0, dry:0, hist:[], events:[], retrainEvery:3, threshold:.55, pulses:0 };
+  function hours(){ return (S.t/3600)%24; }
+  function tick(dt){ // dt in lab seconds
+    S.t += dt; const h=hours(); const day=Math.floor(S.t/86400); if(day!==S.days){ S.days=day; if(day - S.lastRetrain >= S.retrainEvery){ S.lastRetrain=day; S.model++; S.threshold = Math.max(.35, S.threshold - (S.dryHits?0.05:0)); S.dryHits=0; S.events.push({t:S.t,kind:'retrain'}); } }
+    // lights: photoperiod 06:00 to 22:00 with soft edges, unless forced
+    const target = S.lightsForced!=null ? S.lightsForced : (h>6 && h<22 ? Math.min(1, Math.min(h-6, 22-h)/1.5) : 0);
+    S.lights += (target - S.lights)*Math.min(1, dt*.002);
+    // chamber: humidity decays, mist restores; dry spell accelerates loss
+    S.rh += (-.000004*(1+S.dry*3)*(.5+S.lights) + (S.mist>0 ? .0012 : 0))*dt; S.rh=Math.max(.25,Math.min(.98,S.rh));
+    S.temp += ((21.5 + 4*S.lights - (S.mist>0?.5:0)) - S.temp)*Math.min(1,dt*.0005);
+    if(S.dry>0) S.dry=Math.max(0,S.dry-dt*.00008);
+    // plants
+    let stressSum=0;
+    for(const p of plants){
+      const use = (1.2e-5 + 2.0e-5*S.lights)*(1+p.size*.5)*(1+S.dry*3)*dt; p.water -= use;
+      if(S.mist>0) p.water = Math.min(1, p.water + .005*dt);
+      p.water=Math.max(0,p.water);
+      p.stress = Math.max(0, Math.min(1, (0.55 - p.water)/0.45)); // stress rises as water falls below .55
+      const g = .000012*S.lights*(1-p.stress)*dt; p.size = Math.min(1, p.size + g);
+      stressSum += p.stress;
+    }
+    S.meanStress = stressSum/plants.length;
+    // misting: timer, plus plant-regulated early pulse
+    S.mistTimer -= dt; if(S.mist>0){ S.mist -= dt/60; if(S.mist<=0){ S.mist=0; } }
+    const triggered = S.auto && S.meanStress > S.threshold && S.mist===0;
+    if(S.mistTimer<=0 || triggered){ pulse(triggered?'stress':'timer'); }
+    if(S.meanStress>.8) S.dryHits=1;
+    if(!S.hc) S.hc=0; S.hc+=dt; if(S.hc>=120){ S.hc=0; S.hist.push({t:S.t, stress:S.meanStress, rh:S.rh, mist:S.mist>0?1:0}); if(S.hist.length>720) S.hist.shift(); }
+  }
+  function pulse(kind){ S.mist=1; S.mistTimer=S.mistPeriod; S.pulses++; S.events.push({t:S.t,kind:'mist',why:kind}); }
+  function stressPlant(i){ const p=plants[i]; if(p){ p.water=Math.max(0,p.water-.35); } }
+  function drySpell(){ S.dry=1; S.events.push({t:S.t,kind:'dry'}); }
+  return { S, plants, TIERS, COLS, DAY, tick, pulse, stressPlant, drySpell, hours };
+}
+// ------------------------------------------------------------------ render
+function createRenderer(canvas, chartCanvas){
+  const ctx=canvas.getContext('2d'); const cctx=chartCanvas.getContext('2d'); let dpr=1, vw=0, vh=0;
+  function resize(){ dpr=Math.min(2,devicePixelRatio||1); vw=canvas.clientWidth; vh=canvas.clientHeight; canvas.width=vw*dpr; canvas.height=vh*dpr; ctx.setTransform(dpr,0,0,dpr,0,0); chartCanvas.width=chartCanvas.clientWidth*dpr; chartCanvas.height=chartCanvas.clientHeight*dpr; cctx.setTransform(dpr,0,0,dpr,0,0); }
+  function layout(w){ const padR = vw>1100 ? 340 : 0, padT = vw>760 ? 100 : 0, padB = 160; const W=vw-padR-60, H=vh-padT-padB; const cellW=W/w.COLS, tierH=H/w.TIERS; return {ox:30, oy:padT, W, H, cellW, tierH}; }
+  function leaf(x,y,len,ang,col){ ctx.save(); ctx.translate(x,y); ctx.rotate(ang); ctx.beginPath(); ctx.moveTo(0,0); ctx.quadraticCurveTo(len*.5,-len*.35,len,0); ctx.quadraticCurveTo(len*.5,len*.35,0,0); ctx.fillStyle=col; ctx.fill(); ctx.restore(); }
+  function draw(w, now){
+    const S=w.S; const L=layout(w); ctx.fillStyle='#070a08'; ctx.fillRect(0,0,vw,vh);
+    // room glow from lights
+    const lg=ctx.createLinearGradient(0,L.oy,0,L.oy+L.H); lg.addColorStop(0,`rgba(255,139,208,${.10*S.lights})`); lg.addColorStop(1,`rgba(132,198,124,${.05*S.lights})`); ctx.fillStyle=lg; ctx.fillRect(L.ox,L.oy,L.W,L.H);
+    for(let r=0;r<w.TIERS;r++){
+      const y0=L.oy+r*L.tierH; const shelfY=y0+L.tierH*.86;
+      // LED bar at top of tier
+      ctx.fillStyle=`rgba(255,139,208,${.25+.7*S.lights})`; ctx.fillRect(L.ox+8,y0+6,L.W-16,3);
+      if(S.lights>.05){ const g=ctx.createLinearGradient(0,y0+9,0,y0+L.tierH*.8); g.addColorStop(0,`rgba(255,139,208,${.16*S.lights})`); g.addColorStop(1,'rgba(255,139,208,0)'); ctx.fillStyle=g; ctx.fillRect(L.ox+8,y0+9,L.W-16,L.tierH*.75); }
+      // shelf + manifold
+      ctx.fillStyle='#2a2318'; ctx.fillRect(L.ox,shelfY,L.W,5); ctx.fillStyle='#d9d4c8'; ctx.fillRect(L.ox+10,shelfY+9,L.W-20,2.5);
+      for(let c=0;c<w.COLS;c++){
+        const p=w.plants[r*w.COLS+c]; const cx=L.ox+(c+.5)*L.cellW; const potW=Math.min(L.cellW*.55,48), potH=potW*.75; const potY=shelfY-potH;
+        // mister under the pot on the manifold
+        ctx.fillStyle='#bfc8c4'; ctx.fillRect(cx-2,shelfY+6,4,5);
+        if(S.mist>0){ for(let k=0;k<3;k++){ const a=.35*S.mist*(1-k*.25); ctx.beginPath(); ctx.arc(cx+(k-1)*potW*.3, potY+potH*.5 - k*6, 7+k*5, 0, Math.PI*2); ctx.fillStyle=`rgba(159,216,232,${a})`; ctx.fill(); } }
+        // pot
+        ctx.fillStyle='#17191a'; ctx.beginPath(); ctx.moveTo(cx-potW/2,potY); ctx.lineTo(cx+potW/2,potY); ctx.lineTo(cx+potW*.4,potY+potH); ctx.lineTo(cx-potW*.4,potY+potH); ctx.closePath(); ctx.fill(); ctx.strokeStyle='#2f3335'; ctx.stroke();
+        // plant: stem + leaves; droop with stress
+        const hgt=(L.tierH*.55)*p.size+6; const droop=p.stress*0.9; const sway=Math.sin(now/900+p.phase)*.04;
+        const col=`hsl(${p.hue - p.stress*40} ${55 - p.stress*25}% ${38 + S.lights*10 - p.stress*8}%)`;
+        ctx.strokeStyle=col; ctx.lineWidth=Math.max(1,potW*.06); ctx.beginPath(); ctx.moveTo(cx,potY); ctx.quadraticCurveTo(cx+sway*40, potY-hgt*.5, cx+sway*60, potY-hgt); ctx.stroke();
+        for(let k=0;k<p.leaves;k++){ const f=(k+1)/(p.leaves+1); const ly=potY-hgt*f; const lx=cx+sway*60*f; const side=k%2?1:-1; leaf(lx,ly,potW*.5*(.6+p.size*.6), side*(0.9+droop*0.9) , col); }
+        if(p.stress>.6){ ctx.fillStyle=`rgba(240,179,90,${(p.stress-.6)*2})`; ctx.beginPath(); ctx.arc(cx+potW*.45, potY-hgt-4, 2.5, 0, Math.PI*2); ctx.fill(); }
+      }
+    }
+    // chamber humidity haze at the bottom
+    const hz=ctx.createLinearGradient(0,L.oy+L.H*.7,0,L.oy+L.H); hz.addColorStop(0,'rgba(159,216,232,0)'); hz.addColorStop(1,`rgba(159,216,232,${(S.rh-.4)*.25})`); ctx.fillStyle=hz; ctx.fillRect(L.ox,L.oy+L.H*.7,L.W,L.H*.3);
+  }
+  function chart(hist){ const w=chartCanvas.clientWidth,h=chartCanvas.clientHeight; cctx.clearRect(0,0,w,h); cctx.font='9px ui-monospace,monospace'; cctx.fillStyle='#f0b35a'; cctx.fillText('leaf stress',10,12); cctx.fillStyle='#9fd8e8'; cctx.fillText('humidity',80,12); cctx.fillStyle='#97a393'; cctx.fillText('mist',140,12); if(hist.length<2) return; const n=hist.length, X=i=>8+(w-16)*i/(n-1), Y=v=>h-10-(h-26)*v; cctx.fillStyle='rgba(159,216,232,.18)'; hist.forEach((p,i)=>{ if(p.mist) cctx.fillRect(X(i),14,Math.max(1,(w-16)/n),h-24); }); for(const [k,c] of [['stress','#f0b35a'],['rh','#9fd8e8']]){ cctx.beginPath(); hist.forEach((p,i)=>{ i?cctx.lineTo(X(i),Y(p[k])):cctx.moveTo(X(i),Y(p[k])); }); cctx.strokeStyle=c; cctx.lineWidth=1.4; cctx.stroke(); } }
+  function potAt(x,y,w){ const L=layout(w); if(x<L.ox||x>L.ox+L.W||y<L.oy||y>L.oy+L.H) return -1; const c=Math.floor((x-L.ox)/L.cellW), r=Math.floor((y-L.oy)/L.tierH); return r*w.COLS+c; }
+  return { resize, draw, chart, potAt };
+}
+// ------------------------------------------------------------------ app
+(function(){
+  const $=id=>document.getElementById(id); const canvas=$('c'); const R=createRenderer(canvas,$('chartc')); const motion=matchMedia('(prefers-reduced-motion: reduce)');
+  const seedBuf=new Uint32Array(1); crypto.getRandomValues(seedBuf); let seed=seedBuf[0], w, paused=false, fast=false, last=0, frames=0, fpsT=performance.now();
+  function build(){ w=createWall({seed}); }
+  function toast(m){ const t=$('toast'); t.textContent=m; t.classList.add('show'); clearTimeout(toast.h); toast.h=setTimeout(()=>t.classList.remove('show'),2600); }
+  function hud(){ const S=w.S; const h=w.hours(); $('t').textContent=`${String(Math.floor(h)).padStart(2,'0')}:${String(Math.floor((h%1)*60)).padStart(2,'0')}`; $('daystate').textContent=`day ${S.days+1} · a day in ${fast?'30 s':'2 minutes'}`; $('lights').textContent= S.lights>.95?'full':S.lights>.05?(h<12?'rising':'fading'):'off'; $('ppfd').textContent=`${Math.round(S.lights*420)} µmol·m⁻²·s⁻¹`; $('mist').textContent=S.mist>0?'pulsing':'idle'; $('nextmist').textContent=S.mist>0?`pulse ${S.pulses}`:`timer pulse in ${Math.max(0,Math.round(S.mistTimer/60))} min`; const st=$('stress'); st.textContent=S.meanStress.toFixed(2); st.className='v'+(S.meanStress>S.threshold?' warn':''); $('rh').textContent=`${Math.round(S.rh*100)}% RH`; $('temp').textContent=`${S.temp.toFixed(1)} °C`; $('model').textContent='v'+S.model; $('retrain').textContent=`retrains every ${S.retrainEvery} days · mist at stress ${S.threshold.toFixed(2)}`; $('session').textContent = S.dry>0 ? 'Dry spell' : (S.meanStress>S.threshold ? 'Plants asking' : 'Growing'); }
+  function frame(now){ requestAnimationFrame(frame); const dt=Math.min(100,now-last); last=now; if(!paused){ const labdt = dt/1000 * (fast?2880:720) * (motion.matches?.5:1); // 1 real second = 12 lab minutes at 1x: a day in 2 minutes
+      let rem=labdt; while(rem>0){ const step=Math.min(10,rem); w.tick(step); rem-=step; } } R.draw(w,now); if(frames%6===0){ hud(); R.chart(w.S.hist); } frames++; if(now-fpsT>2000){ $('perf').textContent=`${Math.round(frames*1000/(now-fpsT))} fps`; frames=0; fpsT=now; } }
+  $('pause').onclick=()=>{ paused=!paused; $('pause').setAttribute('aria-pressed',paused); $('pause').textContent=paused?'▶ Resume':'Ⅱ Pause'; };
+  $('speed').onclick=()=>{ fast=!fast; $('speed').setAttribute('aria-pressed',fast); $('speed').textContent=fast?'4× Time':'1× Time'; };
+  $('reseed').onclick=()=>{ crypto.getRandomValues(seedBuf); seed=seedBuf[0]; build(); toast('A new wall, seed '+seed.toString(16)); };
+  function setAuto(a){ w.S.auto=a; $('auto').setAttribute('aria-pressed',a); $('timer').setAttribute('aria-pressed',!a); toast(a?'Plant-regulated: the leaves can call for mist':'Timer only: the schedule decides'); }
+  $('auto').onclick=()=>setAuto(true); $('timer').onclick=()=>setAuto(false);
+  $('dry').onclick=()=>{ w.drySpell(); toast('Dry spell: humidity falling faster'); }; $('pulse').onclick=()=>{ w.pulse('manual'); toast('Mist pulse'); }; $('night').onclick=()=>{ w.S.lightsForced = w.S.lightsForced==null ? (w.S.lights>.5?0:1) : null; toast(w.S.lightsForced==null?'Lights back on schedule':(w.S.lightsForced?'Lights forced on':'Lights off')); };
+  canvas.addEventListener('click',e=>{ const r=canvas.getBoundingClientRect(); const i=R.potAt(e.clientX-r.left,e.clientY-r.top,w); if(i>=0){ w.stressPlant(i); toast(`Pot ${i+1} stressed · the loop will answer`); } });
+  // field notes
+  const grid=$('grid'); NOTES.forEach(([f,title,cap])=>{ const fig=document.createElement('figure'); fig.className='note'; fig.tabIndex=0; fig.innerHTML=`<img loading="lazy" src="assets/${f}" alt="${title}: ${cap}"><figcaption><b>${title}</b>${cap}</figcaption>`; const open=()=>{ $('photo-img').src=`assets/${f}`; $('photo-img').alt=`${title}: ${cap}`; $('photo-cap').textContent=`${title}. ${cap}`; $('photo-dialog').showModal(); }; fig.onclick=open; fig.onkeydown=e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open(); } }; grid.appendChild(fig); });
+  function notes(on){ const n=$('notes'); n.classList.toggle('on',on); n.setAttribute('aria-hidden',!on); if(on) n.removeAttribute('inert'); else n.setAttribute('inert',''); $('tonotes').setAttribute('aria-pressed',on); }
+  $('tonotes').onclick=()=>notes(true); $('back').onclick=()=>notes(false);
+  addEventListener('keydown',e=>{ if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT') return; if(e.key===' '){ e.preventDefault(); $('pause').click(); } else if(e.key==='f'||e.key==='F') $('speed').click(); else if(e.key==='r'||e.key==='R') $('reseed').click(); else if(e.key==='m'||e.key==='M') $('pulse').click(); else if(e.key==='d'||e.key==='D') $('dry').click(); else if(e.key==='n'||e.key==='N') $('night').click(); else if(e.key==='p'||e.key==='P') notes(!$('notes').classList.contains('on')); else if(e.key==='Escape') notes(false); else if(e.key==='?') $('help').click(); });
+  $('help').onclick=()=>$('help-dialog').showModal(); addEventListener('resize',R.resize);
+  try{ R.resize(); build(); requestAnimationFrame(frame); setTimeout(()=>$('loading').classList.add('loaded'),600); }
+  catch(err){ const e=$('error'); e.hidden=false; e.textContent='The wall could not start: '+err.message; }
+})();
+</script>
+</body>
+</html>
